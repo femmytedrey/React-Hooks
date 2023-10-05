@@ -6,12 +6,14 @@ import HookCounter4 from './component/HookCounter4';
 import HookCounterOne from './component/HookCounterOne';
 import HookCounterThree from './component/HookCounterThree';
 import HookCounterTwo from './component/HookCounterTwo';
+import HookMouse from './component/HookMouse';
 
 function App() {
   return (
     <div className="App">
+      <HookMouse />
       {/* <ClassCounterOne /> */}
-      <HookCounterOne />
+      {/* <HookCounterOne /> */}
       {/* <HookCounter4 /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
