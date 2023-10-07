@@ -19,7 +19,7 @@ function DataFetching() {
         .catch(err => {
             console.log(err)
         })
-    }, [idFromButtonClick])
+    }, [idFromButtonClick]) 
     
   return (
     <div>
