@@ -1,8 +1,10 @@
 import React, {useReducer} from 'react'
 
-const initialState = 0
+const initialState = {
+    firstCounter: 0
+}
 const reducer = (state, action) => {
-    switch(action){
+    switch(action.type){
         case 'increment':
             return state + 1
         case 'decrement':
@@ -14,16 +16,16 @@ const reducer = (state, action) => {
     }
 }
 
-function ReducerCounterOne() {
+function ReducerCounterTwo() {
     const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div>
-        <p>Count - {count}</p>
-        <button onClick = {() => dispatch('increment')}>Increment</button>
-        <button onClick={() => dispatch('decrement')}>Decrement</button>
-        <button onClick={() => dispatch('reset')}>Reset</button>
+        <p>Count - {count.firstCounter}</p>
+        <button onClick = {() => dispatch({type:'increment'})}>Increment</button>
+        <button onClick={() => dispatch({type: 'decrement'})}>Decrement</button>
+        <button onClick={() => dispatch({type: 'reset'})}>Reset</button>
     </div>
   )
 }
 
-export default ReducerCounterOne
+export default ReducerCounterTwo
