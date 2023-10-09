@@ -15,6 +15,7 @@ import DataFetching from './component/DataFetching';
 import ComponentC from './component/ComponentC';
 import ReducerCounterOne from './component/ReducerCounterOne';
 import ReducerCounterTwo from './component/ReducerCounterTwo';
+import ReducerCounterThree from './component/ReducerCounterThree';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -22,7 +23,8 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <ReducerCounterTwo />
+      <ReducerCounterThree />
+      {/* <ReducerCounterTwo /> */}
       {/* <ReducerCounterOne /> */}
       {/* <UserContext.Provider value ={'Vishwas'}>
         <ChannelContext.Provider value ={'Codevolution'}>
